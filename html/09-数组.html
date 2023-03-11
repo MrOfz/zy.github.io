@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var arr1 = new Array(1,2,3); //方式一
+        var arr2 = [4,5,6];
+        //alert(arr1);
+        arr2[2] = 7;
+        // alert(arr2);
+
+        //特点:JavaScript数组相当于Java中集合。变长变类型
+
+        //变长
+        var arr3 = [1,2,3];
+        arr3[10] = 10;
+        // alert(arr3[10]);
+
+        //变类型
+        arr3[5] = "hello";
+        // alert(arr3);
+
+        //属性:length:数组中的元素个数
+        var arr4 = [1,2,3,4];
+        /*for (let i = 0; i < arr4.length; i++) {
+            alert(arr4[i]);
+        }*/
+
+        //方法：
+        //push：添加方法
+        var arr5 = [1,2,3];
+        arr5.push(10);
+        // alert(arr5);
+        //splice:删除元素
+        arr5.splice(0,1)
+        //arr5.splice(0,0,-1,0);
+        alert(arr5);
+    </script>
+</body>
+</html>

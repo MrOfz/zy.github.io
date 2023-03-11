@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器控制灯泡间隔闪烁</title>
+</head>
+<body>
+    <input type="button" value="开灯" name="on" onclick="on()">
+    <img src="../imgs/off.gif" id="myImage"/>
+    <input type="button" value="关灯" name="off" onclick="off()">
+    <script>
+        function on(){
+            document.getElementById('myImage').src='../imgs/on.gif';
+        }
+
+        function off(){
+            document.getElementById('myImage').src='../imgs/off.gif';
+        }
+        var x = 0;
+        setTimeout(function () {
+            if(x % 2==0){
+                off();
+            }else {
+                on();
+            }
+            x ++;
+        },1000);
+    </script>
+</body>
+</html>
